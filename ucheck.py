@@ -21,10 +21,10 @@ def LoggingIn():
     driver.execute_script("arguments[0].click();", button)
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, 'username'))).send_keys(
-        'chenku27')
+        '')
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, 'password'))).send_keys(
-        'Ss@0000001')
+        '')
     driver.find_element(By.NAME, '_eventId_proceed').click()
 
 
